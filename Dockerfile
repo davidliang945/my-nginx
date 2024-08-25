@@ -6,7 +6,7 @@
 FROM nginx:alpine
 
 # Copy your static website files or HTML files into the Nginx HTML directory
-COPY quickstart.sh /
+COPY index.html /usr/share/nginx/html/index.html
 
 # Expose port 80 to the outside world
 EXPOSE 80
