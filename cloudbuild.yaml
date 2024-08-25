@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/quickstart-image', '.' ]
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/my-ngnix', '.' ]
 images:
-- 'gcr.io/$PROJECT_ID/quickstart-image'
+- 'gcr.io/$PROJECT_ID/my-ngnix'
 logsBucket: gs://log-9801
